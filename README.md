@@ -8,6 +8,11 @@ Install the paclet (version `1.0`) from github releases:
 PacletInstall["https://github.com/daneelsan/wolfram-qoi/releases/download/release/QOI-1.0.paclet"]
 ```
 
+Uninstall the paclet:
+```Mathematica
+PacletUninstall["QOI"]
+```
+
 # Usage
 
 Load the QOI` package:
@@ -26,6 +31,26 @@ Open the documentation of the `QOIDecode` function:
 NotebookOpen[Information[QOIDecode, "Documentation"]["Local"]]
 ```
 ![ref/QOIEncode](./screenshots/ref-QOIDecode.png)
+
+# Samples
+
+A few sample images come with the paclet:
+```Mathematica
+In[]:= DirectoryQ[samplesDir = PacletObject["QOI"]["AssetLocation", "samples"]];
+Out[]= True
+```
+
+Use `ReadByteArray` to import the .qoi images as `ByteArray`s:
+```Mathematica
+In[]:= ToString[qoiByteArrays = ReadByteArray /@ FileNames["*.qoi", samplesDir]]
+Out[]= "{ByteArray[<519653>], ByteArray[<652383>], ByteArray[<675251>], ByteArray[<16488>], ByteArray[<21857>], ByteArray[<24167>]}"
+```
+
+Test the `QOIDecode` function:
+```Mathematica
+In[]:= ImageQ /@ QOIDecode /@ qoiByteArrays
+Out[]= {True, True, True, True, True, True}
+```
 
 # Build
 
