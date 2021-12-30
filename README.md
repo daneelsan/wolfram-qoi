@@ -1,11 +1,14 @@
-# wolfram-qoi
+# QOI
 A Wolfram Language paclet for manipulating the Quite OK Image (QOI) format (https://qoiformat.org/).
 
 # Installation
+
 Install the paclet (version `1.0`) from github releases:
 ```Mathematica
 PacletInstall["https://github.com/daneelsan/wolfram-qoi/releases/download/release/QOI-1.0.paclet"]
 ```
+
+# Usage
 
 Load the QOI` package:
 ```Mathematica
@@ -18,10 +21,11 @@ In[]:= Names["QOI`*"]
 Out[]= {"QOIDecode", "QOIEncode"}
 ```
 
-Open the documentation of the `QOIDecode` function:
+Open the documentation of the `QOIEncode` function:
 ```Mathematica
-NotebookOpen[Information[QOIDecode, "Documentation"]["Local"]]
+NotebookOpen[Information[QOIEncode, "Documentation"]["Local"]]
 ```
+![ref/QOIEncode](./screenshots/ref-QOIEncode.png)
 
 # Build
 
