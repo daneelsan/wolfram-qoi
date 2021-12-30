@@ -15,7 +15,7 @@ If[!DirectoryQ[qoiDir],
 
 srcFiles = FileNames["*.c", srcDir];
 
-warningsFlags = {"-Wall", "-Wextra", "-Werror", "-pedantic", "-Wno-unused"};
+warningsFlags = {"-Wall", "-Wextra", "-Werror", "-pedantic", "-Wno-unused", "-Wno-unused-parameter"};
 
 Print["Building the library in ", libDir];
 libPath = CCompilerDriver`CreateLibrary[

@@ -5,7 +5,7 @@ PacletObject[
 		"Description" -> "A Wolfram Language paclet for manipulating the Quite OK Image (QOI) format.",
 		"Creator" -> "Daniel Sanchez",
 		"WolframVersion" -> "13.+",
-		"SystemID" -> {"Linux-x86-64"},
+		"SystemID" -> {"Linux-x86-64", "MacOSX-ARM64"},
 		"Extensions" ->
 			{
 				{
