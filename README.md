@@ -21,11 +21,11 @@ In[]:= Names["QOI`*"]
 Out[]= {"QOIDecode", "QOIEncode"}
 ```
 
-Open the documentation of the `QOIEncode` function:
+Open the documentation of the `QOIDecode` function:
 ```Mathematica
-NotebookOpen[Information[QOIEncode, "Documentation"]["Local"]]
+NotebookOpen[Information[QOIDecode, "Documentation"]["Local"]]
 ```
-![ref/QOIEncode](./screenshots/ref-QOIEncode.png)
+![ref/QOIEncode](./screenshots/ref-QOIDecode.png)
 
 # Build
 
